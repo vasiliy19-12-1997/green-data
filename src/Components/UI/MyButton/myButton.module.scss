@@ -1,0 +1,10 @@
+.Button {
+  display: grid;
+  grid-template-columns: auto;
+  margin: 10px;
+  &S {
+    cursor: pointer;
+    border-radius: 8px;
+    font: 16px lbold;
+  }
+}

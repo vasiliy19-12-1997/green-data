@@ -1,24 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter } from "react-router-dom";
+import "./App.scss";
+import AppRouter from "./AppRouter/appRouter";
+import { AuthContext } from "./Context/context";
+import { useState } from "react";
 
 function App() {
+  const [isAuth, setIsAuth] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AuthContext.Provider
+        value={{ isAuth, setIsAuth, setIsLoading, isLoading }}
+      >
+        <BrowserRouter>
+          <AppRouter />
+        </BrowserRouter>
+      </AuthContext.Provider>
     </div>
   );
 }
