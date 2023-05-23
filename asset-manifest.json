@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/green-data/static/css/main.b097cb72.css",
+    "main.js": "/green-data/static/js/main.43370470.js",
+    "index.html": "/green-data/index.html",
+    "main.b097cb72.css.map": "/green-data/static/css/main.b097cb72.css.map",
+    "main.43370470.js.map": "/green-data/static/js/main.43370470.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b097cb72.css",
+    "static/js/main.43370470.js"
+  ]
+}
